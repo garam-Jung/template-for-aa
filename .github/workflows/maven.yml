@@ -3,7 +3,7 @@ name: github action CI
 on: workflow_dispatch
 
 env:
-  IMAGE_NAME: 82252240
+  IMAGE_NAME: template-for-aa
 
 jobs:
   build:
