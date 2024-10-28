@@ -1,7 +1,7 @@
 configMapGenerator:
 - files:
   - application.yml
-  name: template-aa-configmap
+  name: cloud-sample-configmap
 resources:
 - ../../base
 - pvc.yaml
