@@ -1,19 +1,19 @@
 apiVersion : apps/v1
 kind: Deployment
 metadata:
-  name: cloud-sample 
+  name: template-aa 
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: cloud-sample
+      app: template-aa
   template:
     metadata:
       labels:
-        app: cloud-sample 
+        app: template-aa 
     spec:
       containers:
-        - name: cloud-sample 
+        - name: template-aa 
           image: ceappacr.azurecr.io/82252240
           ports:
           - containerPort: 8080

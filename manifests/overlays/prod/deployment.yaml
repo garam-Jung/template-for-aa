@@ -1,31 +1,31 @@
 apiVersion : apps/v1
 kind: Deployment
 metadata:
-  name: "cloud-sample"
+  name: "template-aa"
 spec:
   replicas: 1
   template:
     spec:
       containers:
-        - name: "cloud-sample"
+        - name: "template-aa"
           command: ["java","-jar","/app.jar"]
           args: ["--spring.config.location=file:/config/application.yml"]
           volumeMounts:
-          - mountPath: /mnt/cloud-sample
-            name: "cloud-sample-volume"
+          - mountPath: /mnt/template-aa
+            name: "template-aa-volume"
             readOnly: false
-            subPath: cloud-sample
+            subPath: template-aa
           - mountPath: /config
             name: application-properties
             readOnly: true
                           
       volumes:
-      - name: "cloud-sample-volume"
+      - name: "template-aa-volume"
         persistentVolumeClaim:
           claimName: cepg-aa-std-pvc
       - name: application-properties
         configMap:
-          name: "cloud-sample-configmap"
+          name: "template-aa-configmap"
           items:
             - key: application.yml
               path: application.yml
