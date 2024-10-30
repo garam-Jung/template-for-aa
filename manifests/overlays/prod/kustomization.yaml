@@ -16,4 +16,4 @@ images:
 - name: ceappacr.azurecr.io/82252240
   newTag: "202410270640"
 - name: ceappacr.azurecr.io/template-for-aa
-  newTag: "202410300924"
+  newTag: "202410300927"
