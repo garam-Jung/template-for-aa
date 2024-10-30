@@ -3,7 +3,7 @@ name: ci
 on: workflow_dispatch
 
 env:
-  IMAGE_NAME: template-for-aa
+  IMAGE_NAME: 82252240
 
 jobs:
   build:
