@@ -13,6 +13,6 @@ kind: Kustomization
 namePrefix: prod-
 images:
 - name: ceappacr.azurecr.io/82252240
-  newTag: "202410301339"
+  newTag: "202410301347"
 - name: ceappacr.azurecr.io/template-for-aa
   newTag: "202410301331"
