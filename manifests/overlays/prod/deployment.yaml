@@ -22,7 +22,7 @@ spec:
       volumes:
       - name: "cloud-sample-volume"
         persistentVolumeClaim:
-          claimName: cepg-aa-pvc
+          claimName: cepg-aa-std-pvc
       - name: application-properties
         configMap:
           name: "cloud-sample-configmap"
